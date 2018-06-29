@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool>
+  <ApiVersion>5.0</ApiVersion>
+  <Id>org.oscillity.Babbler</Id>
+  <Version>1.0</Version>
+  <Name>Babbler</Name>
+  <Author>danoise [bjorn.nesby@gmail.com]</Author>
+  <Description>A tool that generates random words. Launch from tool menu.</Description>
+  <Category>Random</Category>
+  <Homepage></Homepage>
+</RenoiseScriptingTool>
+
