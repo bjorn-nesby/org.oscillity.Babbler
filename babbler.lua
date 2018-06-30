@@ -1,23 +1,18 @@
+--[[===============================================================================================
+org.oscillity.Babbler.xrnx/babbler.lua
+===============================================================================================]]--
+
 --[[
 
-Babbler is random name generator with simple phonetic rules 
-
-
-  --self.pool = loadfile('data/cumbria_fells.lua')
-  --self.pool = self.name_pool()
-
-
+Main application class
 
 ]]
 
 class 'Babbler'
 
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 function Babbler:__init(pool)
-  print("Babbler:__init")
-  print("pool",pool)
-  rprint(pool)
   
   -- table, pool of words 
   self.pool = pool
@@ -27,12 +22,11 @@ function Babbler:__init(pool)
   
 end
 
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 -- @return string (generated word)
 --  or boolean,string if a problem occurred 
 
 function Babbler:generate()
-  print("Babbler:generate()",self)
   
   if (table.is_empty(self.pool)) then 
     return false, "No word pool has been defined"
@@ -42,7 +36,7 @@ function Babbler:generate()
   
 end  
 
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 function Babbler:reset()
   
@@ -50,7 +44,7 @@ function Babbler:reset()
   
 end
 
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 function Babbler:_generate(str,iters,idx,once)
 
